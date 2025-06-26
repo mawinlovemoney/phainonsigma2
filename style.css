@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 320px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calculator-screen {
+    width: calc(100% - 20px);
+    background-color: #222;
+    color: #00ff00;
+    font-size: 2.5em;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator-keys button {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.calculator-keys button:hover {
+    background-color: #666;
+}
+
+.calculator-keys .operator {
+    background-color: #ff9500;
+}
+
+.calculator-keys .operator:hover {
+    background-color: #e08e00;
+}
+
+.calculator-keys .equal-sign {
+    background-color: #007bff;
+    grid-column: span 1; /* ใช้พื้นที่เท่าปุ่มปกติ */
+}
+
+.calculator-keys .equal-sign:hover {
+    background-color: #0056b3;
+}
+
+.calculator-keys .all-clear {
+    background-color: #dc3545;
+}
+
+.calculator-keys .all-clear:hover {
+    background-color: #c82333;
+}
+
+.calculator-keys .decimal {
+    background-color: #555;
+}
